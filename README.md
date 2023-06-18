@@ -14,6 +14,12 @@ there is a alternative store_id_program(store_id_program.py) provided by user [d
 squid.conf
 --------
 
+### do not use concurrency in url_rewrite_children
+
+Because it will pass additional arguments to store_id helper which helper does not suspect
+
+-------
+
 i use the default configuration with the exception of refresh_patterns, which i replaced with my own:
 
     #                 3 month    12 month
